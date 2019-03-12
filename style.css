@@ -47,7 +47,7 @@ a:hover, a:active, a:focus {
 	background-color: #FFF;
 	margin: 0 auto;
 	box-shadow: 0 4px 100px 0 rgba(0, 0, 0, 1), 0 6px 100px 0 rgba(0, 0, 0, 0.19);
-	
+	alignment-adjust:center;
 }
 .galeria {
 	/*alignment-adjust:central;*/
@@ -64,6 +64,23 @@ a:hover, a:active, a:focus {
 	width:100%;
 	}
 .main {
+	width:80%;
+	max-width:1000px;
+	padding: 10px 0;
+	margin: 1% 1% 1% 1%;
+	display:inline-block;
+	height:100%;
+	vertical-align:top;
+	font-size:14px;
+	text-align:justify;
+	background-color:#FFF;
+	margin-top:auto;
+	padding-bottom:10px;
+	/*
+	background-color:#FFDF00;
+	*/
+}
+.map {
 	width:40%;
 	max-width:600px;
 	padding: 10px 0;
@@ -81,7 +98,7 @@ a:hover, a:active, a:focus {
 	*/
 }
 .content {
-	width:26%;
+	width:25%;
 	max-width:600px;
 	padding: 10px 0;
 	margin: 1% 1% 1% 1%;
