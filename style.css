@@ -7,139 +7,55 @@ body {
 	padding: 0;
 	color: #000;
 	height:100%;
+	/*background-color:black;*/
 	background: url(imagenes/background.png) no-repeat center center fixed; 
 	webkit-background-size: cover;
 	moz-background-size: cover;
 	background-size: cover;
 	background-size: cover;
+	min-width:1000px;
 }
 
-ul, ol, dl {
-	padding: 0;
-	margin: 0;
-}
-h1, h2, h3, h4, h5, h6, p {
-	margin-top: 0;
-	text-align:center;
-}
-a img {
-	border: none;
+a{
+	display:inline-block;
+	cursor: pointer;
+	}
+
+img {
+	width:100%;
+	}
+
+.titulo{
+	width:90%;
+	margin-top:20px;
+	}
+
+.fade .front{
+	z-index: 9999;
+    transition: opacity .5s linear;
+    cursor: pointer;
+	}
+	
+.fade:hover > .front{
+  opacity: 0;
 }
 
-a:link {
-	color:#414958;
-	text-decoration: underline;
-}
-a:visited {
-	color: #4E5869;
-	text-decoration: underline;
-}
-a:hover, a:active, a:focus {
-	text-decoration: none;
-}
-
-.container {
-	width:80%;
-	max-width:1280px;
-	min-width:780px;
-	height:100%;
-	min-height:800px;
-	background-color: #FFF;
-	margin: 0 auto;
+.fade{
+	}
+	
+.inicio {
+	width:60%;
+	position: fixed; /* or absolute */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	box-shadow: 0 4px 100px 0 rgba(0, 0, 0, 1), 0 6px 100px 0 rgba(0, 0, 0, 0.19);
-	alignment-adjust:center;
-}
-.galeria {
-	/*alignment-adjust:central;*/
-	width:100%;
-	max-width:1280px;
-	display:inline-block;
-	/*text-align:justify;*/
-	overflow:hidden;
-	/*margin-top:auto;*/
-	background-color:#808080;
-}
 
-.galeria img{
-	width:100%;
 	}
-.main {
-	width:80%;
-	max-width:1000px;
-	padding: 10px 0;
-	margin: 1% 1% 1% 1%;
-	display:inline-block;
-	height:100%;
-	vertical-align:top;
-	font-size:14px;
-	text-align:justify;
-	background-color:#FFF;
-	margin-top:auto;
-	padding-bottom:10px;
-}
-.map {
-	width:40%;
-	max-width:600px;
-	padding: 10px 0;
-	margin: 1% 1% 1% 1%;
-	display:inline-block;
-	height:100%;
-	vertical-align:top;
-	font-size:14px;
-	text-align:justify;
-	background-color:#FFF;
-	margin-top:auto;
-	padding-bottom:10px;
-}
-.content {
-	width:25%;
-	max-width:600px;
-	padding: 10px 0;
-	margin: 1% 1% 1% 1%;
-	display:inline-block;
-	height:100%;
-	vertical-align:top;
-	font-size:14px;
-	text-align:justify;
-	background-color:#FFF;
-	margin-top:auto;
-	padding-bottom:10px;
-	overflow:hidden;
-	/*
-	background-color:#FFDF00;
-	*/
-}
-
-.logo {
-	alignment-adjust:central;
-	vertical-align:100%;
+.back {
+	width:60%;
+	position: fixed; /* or absolute */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	}
-.logo img{
-	width:100%;
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-	vertical-align:central;
-	}
-
-/* ~~ This grouped selector gives the lists in the .content area space ~~ */
-.content ul, .content ol { 
-	padding: 0 15px 15px 40px; 
-}
-
-/* ~~ miscellaneous float/clear classes ~~ */
-.fltrt { 
-	float: right;
-	margin-left: 8px;
-}
-.fltlft {
-	float: left;
-	margin-right: 8px;
-}
-.clearfloat { 
-	clear:both;
-	height:0;
-	font-size: 1px;
-	line-height: 0px;
-}
-
